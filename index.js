@@ -25,19 +25,19 @@ const destructivelyRemoveFirstCat= function(){
     cats.shift()
 }
 
-const appendCat= [...cats, "Broom"]
+function appendCat(){
+    return [...cats, "Broom"]
+} 
 
 
-const prependCat= ["Arnold", ...cats]
+function prependCat (){
+    return ["Arnold", ...cats]
+}
 
-const removeLastCat= function(){
-    cats.length = 0;
-    cats.push('Milo', 'Otis', 'Garfield')
-    cats.slice(0, cats.length-1)
+function removeLastCat(){
+    return cats.slice(0, cats.length-1)
 }
 
 const removeFirstCat= function(){
-    cats.length = 0;
-    cats.push('Milo', 'Otis', 'Garfield')
-    cats.slice(1)
+    return cats.slice(1)
 }
